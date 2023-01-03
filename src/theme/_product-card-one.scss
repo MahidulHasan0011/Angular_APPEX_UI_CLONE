@@ -1,0 +1,77 @@
+@import "variables";
+
+/*** card1 ***/
+.card1{
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0/5%);
+  border-radius: 15px;
+}
+.card1-img{
+  display: block;
+  width: 100%;
+}
+.card1-img img{
+  width: 100%;
+  max-height: 130px;
+  border-radius: 15px 10px 0px 0px;
+}
+.card1-body{
+  padding:8px 6px 10px 6px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card1-title{
+  display: block;
+}
+.card1-title a{
+  color: #000000;
+  font-family: $font-en-primary;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  line-height: 17px;
+  transition: all 0.3s linear;
+  height: 34px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.card1-price{
+  display: block;
+  max-width: 70px;
+  width: 100%;
+  text-align: right;
+}
+.card1-rating {
+  display: block;
+}
+.card1-rating ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+.card1-rating ul li{
+  display: inline-block;
+  font-size: 11px;
+  font-style: normal;
+  color: #dfbc0e;
+}
+.card1-rating ul li:last-child{
+  color: #7a7a7a;
+}
+.card1-amount{
+  display: block;
+}
+.card1-amount span{
+  font-family: $font-en-primary-2;
+  font-weight: 600;
+  color: #ff1111;
+  font-size: 14px;
+  font-style: normal;
+  box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+
+    <div class="cartIMAGEDIV">
+        <div class="oferImgSize">
+          <div class="cartImage">
+            <img  [src]="data ? data.images : '/assets/images/placeholder/test.png'" [alt]="data?.title">
+            </div>
+        </div>
+            <div class="offer-title">
+              <a routerLinkActive="router-link-active" >{{data?.name}}</a>
+          </div>  
+          <div class="offer-discription">
+            <a routerLinkActive="router-link-active" >{{data?.discription}}</a>
+        </div>
+      </div>
+  
+       

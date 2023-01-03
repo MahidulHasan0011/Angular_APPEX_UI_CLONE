@@ -1,0 +1,34 @@
+
+ <div class="product-card-one" [id]="data?._id" [routerLink]="['/product-details', data?._id]"  >
+    <!---product-img-->
+    <div class="card-img">
+        <img  [src]="thumbnailImage ? thumbnailImage : '/assets/images/placeholder/test.png'" [alt]="data?.title">
+    </div>
+    <!---card-body-->
+    <div class="card-body">
+        <!---card-title-->
+        <div class="card-title">
+            <a routerLinkActive="router-link-active" >{{data?.title}}</a>
+        </div><!---card-title-end-->
+        <!--card-price-and-rating-->
+        <div class="price-rating">
+            <!--price-->
+            <div class="price">
+                <h3>{{data?.Price}}TK</h3>
+                <!-- <h4><del>{{data?.discount}}</del>-12%</h4> -->
+            </div>
+            <div class="discount">
+                <h3>{{data?.discount}}TK</h3>
+                <!-- <h4><del>{{data?.discount}}</del>-12%</h4> -->
+            </div>
+          
+          
+        </div>
+       
+        <!-- <div> -->
+            <!-- </div> -->
+        </div>
+        <button class="buy">BUY NOW</button>
+     
+    
+</div>

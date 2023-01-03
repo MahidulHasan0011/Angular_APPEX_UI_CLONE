@@ -1,0 +1,10 @@
+<div class="carosel">
+    <swiper [navigation]="false" [pagination]="true"[autoplay]="true" [loop]="true" class="mySwiper">
+      <ng-template
+       *ngFor="let d of data" swiperSlide>
+       <div class="ImgREs">
+        <img  [src]="d ? d.images : '/assets/images/placeholder/test.png'" [alt]="d?.title">
+       </div>
+      </ng-template>
+    </swiper>
+  </div>

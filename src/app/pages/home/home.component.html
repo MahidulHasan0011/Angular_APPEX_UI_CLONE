@@ -1,0 +1,232 @@
+<!-- <div class="">
+          
+  <app-header [data]="header" ></app-header>
+</div>  -->
+
+<div class="CaroImageRE">
+  <app-main-carosole [data]="carosoleImage"></app-main-carosole>
+</div>
+
+
+
+
+
+
+      <div class="cart-top">
+          
+      <app-categary *ngFor="let data of categoryImge" [data]="data"></app-categary>
+
+    </div>
+
+
+
+
+
+    <div>    
+    <h1 class="Title">WHAT'S NEW</h1>
+
+
+
+        <div class="Title-bottom-area">
+        
+        
+          
+            <div class="Title-bottom-main">
+          
+              <div class="Title-menu-area">
+                <ul>
+                  <li><a class="border">SANDAL</a></li>
+                  <li><a>SPORT SHOES</a></li>
+                  <li><a>MOCCASIN & LOAFER</a></li>
+                  <li><a>ACCESSORIES</a></li>
+                  <li><a>Apparels</a></li>
+                
+                </ul>
+              </div>
+            </div>
+        </div>
+    
+
+
+
+    </div>
+
+
+    <div class=" underline">
+          
+      <div class="section1-main carousels">
+        <swiper [slidesPerView]="2" [spaceBetween]="14" [breakpoints]="{
+          '390': {
+            slidesPerView: 1.5
+          },
+            '450': {
+              slidesPerView: 1.5
+            },
+            '520': {
+              slidesPerView: 2
+            },
+            '660': {
+              slidesPerView: 2.5
+            },
+            '900': {
+              slidesPerView: 3
+            },
+            '1000': {
+              slidesPerView: 3.5
+            },
+            '1200': {
+              slidesPerView: 4
+            },
+            '1370': {
+              slidesPerView: 4.5
+            },
+            '1600': {
+              slidesPerView: 5
+            }
+          }" [pagination]="false" [autoplay]="false" [navigation]="false" class="mySwiper">
+          <ng-template swiperSlide *ngFor="let data of cardOneData">
+            <app-cart-one [data]="data"></app-cart-one>
+          </ng-template>
+        </swiper>
+      </div>
+        
+    
+  </div>  
+    
+
+
+<div class="HomeImages">
+  <div class="firstImagw">
+    <img src="../../../assets/othersImages/one.png">
+  </div>
+  <div class="secondImage">
+    <img src="../../../assets/othersImages/sprint_dasktop.jpg">
+    <img src="../../../assets/othersImages/maverick_Desktop.webp">
+  </div>
+ 
+</div>
+
+
+
+<div class="Brand">
+  <h1 class="ShopBy">Shop by Brand</h1>
+</div>
+
+
+
+
+
+
+          
+  <div class="">
+          
+    <div class="section1-main carousels">
+      <swiper [slidesPerView]="2" [spaceBetween]="14" [breakpoints]="{
+        '390': {
+          slidesPerView: 3
+        },
+          '450': {
+            slidesPerView: 1.5
+          },
+          '520': {
+            slidesPerView: 2
+          },
+          '660': {
+            slidesPerView: 2.5
+          },
+          '900': {
+            slidesPerView: 3
+          },
+          '1000': {
+            slidesPerView: 3.5
+          },
+          '1200': {
+            slidesPerView: 4
+          },
+          '1370': {
+            slidesPerView: 4.5
+          },
+          '1600': {
+            slidesPerView: 5
+          }
+        }" [pagination]="false" [autoplay]="false" [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide *ngFor="let data of cartTwoImge">
+          <app-cart-two [data]="data"></app-cart-two>
+          <!-- < app-cart-two[data]="data"></app-cart-one> -->
+        </ng-template>
+      </swiper>
+    </div>
+      
+  
+</div> 
+
+
+<div class="middleImg">
+  <div class="first"><img  src="../../../assets/anotherimg/one.png"></div>
+  <div class="secong"><img src="../../../assets/anotherimg/two.png"></div>
+  <div class="three"> <img src="../../../assets/anotherimg/three.png"></div>
+</div>
+
+
+
+<div class="BestSeller">
+  <h1 class="Seller">Best Seller</h1>
+</div>
+
+<div class="">
+          
+  <div class="section1-main carousels">
+    <swiper [slidesPerView]="2" [spaceBetween]="14" [breakpoints]="{
+    
+        '390': {
+          slidesPerView: 1.5
+        },
+        '520': {
+          slidesPerView: 2
+        },
+        '660': {
+          slidesPerView: 2.5
+        },
+        '900': {
+          slidesPerView: 3
+        },
+        '1000': {
+          slidesPerView: 3.5
+        },
+        '1200': {
+          slidesPerView: 4
+        },
+        '1370': {
+          slidesPerView: 4.5
+        },
+        '1600': {
+          slidesPerView: 5
+        }
+      }" [pagination]="false" [autoplay]="false" [navigation]="false" class="mySwiper">
+      <ng-template swiperSlide *ngFor="let data of cartThreeImge">
+        <app-cartthree [data]="data"></app-cartthree>
+        <!-- < app-cart-two[data]="data"></app-cart-one> -->
+      </ng-template>
+    </swiper>
+  </div>
+    
+
+</div> 
+
+
+<div class="Offers">
+  <h1 class="NandO">News and Offers</h1>
+  <h3 class="stayInTheKnow">Stay in the know</h3>
+</div>
+
+
+<div class="offer-cart">
+     <app-offer-cart *ngFor="let data of offersImge" [data]="data"></app-offer-cart>     
+ 
+
+</div>
+
+<div class="above-footer">
+  <app-above-footer *ngFor="let data of aboveFooterImge" [data]="data"></app-above-footer>
+
+</div>

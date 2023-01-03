@@ -1,0 +1,37 @@
+.cartIMAGEDIV{
+    border: 1px solid #f8f7f7;
+    height: 205px;
+}
+.cartImage{
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+    img{
+        width: 100%;
+       
+    }
+}
+oferImgSize{
+    width: 100px;
+    height: 100px;
+}
+
+.offer-title{
+     
+        font-size: 16px;
+        text-align: center;
+        padding-top: 5px;
+        color: black;
+    
+}
+.offer-discription{
+    font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+}
+.oferImgSize {
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

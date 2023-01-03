@@ -1,0 +1,330 @@
+<div class="Pdetails">
+  <div class="PDetails_body">  
+    <div class="Swiper">
+        <swiper
+        style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+        [loop]="true"
+        [spaceBetween]="10"
+        [navigation]="true"
+        [thumbs]="{ swiper: thumbsSwiper }"
+        class="mySwiper2"
+       >
+       <ng-template
+       *ngFor="let d of carosoleImage" swiperSlide>
+       <div class="ImgREs">
+        <img  [src]="d ? d.images : '/assets/images/placeholder/test.png'" [alt]="d?.images">
+       </div>
+       </ng-template>
+       </swiper>
+       <div class="SECEnd_swiper">
+        <swiper
+        (swiper)="thumbsSwiper = $event"
+        [loop]="false"
+        [spaceBetween]="10"
+        [slidesPerView]="4"
+        [freeMode]="true"
+        [watchSlidesProgress]="true"
+        class="mySwiper"
+       >
+       <ng-template
+
+       *ngFor="let d of carosoleImage; let i=index" swiperSlide>
+
+       <div class="ImgREs" (click)="onChange(i)" >
+        <div class="imgSize" [class]="imageColor[i] ? 'imgColor' : 'imgSize'">
+            <img class="MULTI_IMG" [src]="d ? d.images : '/assets/images/placeholder/test.png'" [alt]="d?.images">
+        
+        </div>
+       
+         
+       </div>
+       </ng-template>
+       </swiper>
+       </div>
+
+       <div>
+        <div class="Choose_ChooseImg">
+         <ul class="Choose">
+          <li>Closed sandal shoe made of PU upper for comfort and <br> style </li>
+          <li>Lightweight PVC sole ideal for all day wear</li>
+         </ul>
+         <div class="ChooseIMG">
+          <img src="../../../assets/cartsimage/three.png">
+         </div>
+         
+        </div>
+      </div>
+
+      <div class="Spec">
+        <span class="setesfiction">
+            Specifications
+        </span>
+        <div class="Upper">
+            <span>Upper Material</span>
+            <span>Leather</span>
+        </div>
+        <div class="Sole">
+            <span>Sole Material</span>
+            <span>Rubber</span>
+        </div>
+      </div>
+      <div class="AnotherOffer">
+        <div class="offerDETAILS">
+          <div class=" You_may_also_like ">
+              <h1> You may also like </h1>
+          </div>
+      
+          <div class="section1-main carousels">
+              <swiper [slidesPerView]="2" [spaceBetween]="14" [breakpoints]="{
+                '390': {
+                  slidesPerView: 1
+                },
+                  '450': {
+                    slidesPerView: 1
+                  },
+                  '520': {
+                    slidesPerView: 1
+                  },
+                  '660': {
+                    slidesPerView: 2
+                  },
+                  '900': {
+                    slidesPerView: 2.5
+                  },
+                  '1000': {
+                    slidesPerView: 2.5
+                  },
+                  '1200': {
+                    slidesPerView: 3
+                  },
+                  '1370': {
+                    slidesPerView: 4.5
+                  },
+                  '1600': {
+                    slidesPerView: 5
+                  }
+                }" [pagination]="false" [autoplay]="false" [navigation]="false" class="mySwiper">
+                <ng-template swiperSlide *ngFor="let data of cardOneData">
+                  <app-also-look-cart [data]="data"></app-also-look-cart>
+                </ng-template>
+              </swiper>
+            </div>
+        </div>
+      
+        <div>
+          
+        </div>
+      </div>
+
+    </div>
+    <div class="Details">
+        <div class="resize">
+            <p style="font-size:16px ;">Sandals</p>
+
+            <mat-icon>add_shopping_cart</mat-icon>
+        </div>
+        <h2>APEX Men's Close Sandal</h2>
+        <p style="font-size:16px ;">SKU-92612A01</p>
+        <p style="font-size:16px ;">Brand -Apex</p>
+        <div class="price">
+            <p class="Adite">৳ 1,490</p>
+            <p style="font-size:26px; ">৳ 1,267</p>
+            <P class="Discount">(<span style="font-weight:bolder ;">15% </span>OFF)</P>
+        </div>
+
+
+
+
+
+        
+        <div class="color">
+            <p>Color</p>
+            <img src="../../../assets/color/BLACK.png">
+            <p>Select Size</p>
+            <div class="size_sandel">
+                <span class="span">40</span>
+                <span class="spann">41</span>
+                <span class="spann">42</span>
+                <span class="spann">42</span>
+            </div>
+            <span class="Guide">Size Guide</span>
+            <div class="QUANTITY_INCREASE">
+                <span class="MINUS">--</span>
+                <span class="QUANTITY">1</span>
+                <span class="PLASS">+</span>  
+            </div>
+            <div class="BUTTONS">
+                <button class="one">
+                    ADD TO BAG
+                </button>
+                <button class="two">
+                    BUY NOW
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+  <div class="M_VIWW_Details">
+    <div class="resize">
+      <h2>APEX Men's Close Sandal</h2>
+
+        <mat-icon>add_shopping_cart</mat-icon>
+    </div>
+    
+    <p style="font-size:16px ;">SKU-92612A01</p>
+    <p style="font-size:16px ;">Brand -Apex</p>
+    <div class="M_VIEW_price">
+        <p class="Adite">৳ 1,490</p>
+        <p style="font-size:26px; ">৳ 1,267</p>
+        <P class="Discount">(<span style="font-weight:bolder ;">15% </span>OFF)</P>
+    </div>
+   
+  </div>
+
+<div class="MOb_SWI">
+  <swiper
+  style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff"
+  [loop]="true"
+  [spaceBetween]="10"
+  [navigation]="false"
+  [pagination]="true"
+  [thumbs]="{ swiper: thumbsSwiper }"
+  class="mySwiper2"
+>
+<ng-template
+*ngFor="let d of carosoleImage" swiperSlide>
+<div class="ImgREs">
+  <img  [src]="d ? d.images : '/assets/images/placeholder/test.png'" [alt]="d?.images">
+</div>
+</ng-template>
+</swiper>
+</div>
+
+
+
+
+
+
+<div class="M_VIWW_Details">
+
+  
+  <div class="color">
+      <p>Color</p>
+      <img src="../../../assets/color/BLACK.png">
+      <p>Select Size</p>
+      <div class="size_sandel">
+          <span class="span">40</span>
+          <span class="spann">41</span>
+          <span class="spann">42</span>
+          <span class="spann">42</span>
+      </div>
+      <span class="Guide">Size Guide</span>
+      <div class="QUANTITY_INCREASE">
+          <span class="MINUS">--</span>
+          <span class="QUANTITY">1</span>
+          <span class="PLASS">+</span>  
+      </div>
+
+     
+        <ul class="M_VIEW_Choose">
+         <li>Decorative leather upper for a classy look . </li>
+         <li>Comfotable footbed to stay at ease .</li>
+         <li>Adjustable velcro for perfect fitting </li>
+        </ul>
+        <div class="M_VIEW_ChooseIMG">
+         <img src="../../../assets/cartsimage/three.png">
+        </div>
+
+        
+      <div class="M_VIEW_Spec">
+        <span class="setesfiction">
+            Specifications
+        </span>
+        <div class="Upper">
+            <span>Upper Material</span>
+            <span>Leather</span>
+        </div>
+        <div class="Sole">
+            <span>Sole Material</span>
+            <span>Rubber</span>
+        </div>
+      </div>
+        
+
+      <div class="AnotherOffer">
+        <div class="M_VIEW_offerDETAILS">
+          <div class=" M_VIEW_You_may_also_like ">
+              <h1> You may also like </h1>
+          </div>
+      
+          <div class="section1-main carousels">
+              <swiper [slidesPerView]="2" [spaceBetween]="14" [breakpoints]="{
+                '390': {
+                  slidesPerView:2
+                },
+                  '450': {
+                    slidesPerView: 1
+                  },
+                  '520': {
+                    slidesPerView: 1
+                  },
+                  '660': {
+                    slidesPerView: 2
+                  },
+                  '900': {
+                    slidesPerView: 2.5
+                  },
+                  '1000': {
+                    slidesPerView: 2.5
+                  },
+                  '1200': {
+                    slidesPerView: 3
+                  },
+                  '1370': {
+                    slidesPerView: 4.5
+                  },
+                  '1600': {
+                    slidesPerView: 5
+                  }
+                }" [pagination]="false" [autoplay]="false" [navigation]="false" class="mySwiper">
+                <ng-template swiperSlide *ngFor="let data of cardOneData">
+                  <app-also-look-cart [data]="data"></app-also-look-cart>
+                </ng-template>
+              </swiper>
+            </div>
+        </div>
+      
+        <div>
+          
+        </div>
+      </div>
+
+
+
+
+
+     
+
+
+      <div class="BUTTONS">
+          <button class="one">
+              ADD TO BAG
+          </button>
+          <button class="two">
+              BUY NOW
+          </button>
+      </div>
+  </div>
+</div>
+<div class="above-footer">
+  <app-above-footer *ngFor="let data of aboveFooterImge" [data]="data"></app-above-footer>
+
+</div>
+
+

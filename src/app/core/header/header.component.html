@@ -1,0 +1,385 @@
+
+
+  <div class="header-area" id="header">
+    <div class="header-top-area">
+      <div class="container-header">
+        <div class="header-top-content">
+          <img
+            src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/heaphones.png">
+          <p>
+            +8809617223344
+          </p>
+        </div>
+  
+        <div class="banner-slidecarousel">
+          <swiper [slidesPerView]="1" [navigation]="false" [loop]="false" [autoplay]="true"
+            class="mySwiper banner-carousel">
+              <ng-template swiperSlide [id]="carousel?._id" *ngFor="let data of [1]">
+  
+                <div class="slide-p">
+  
+                  <p>FREE SHIPPING ON ALL ORDERS</p>
+  
+                </div>
+              </ng-template>
+          </swiper>
+        </div>
+
+
+
+
+        <div class="HeaderSwiper">
+          <div class="carosel">
+            <swiper [navigation]="false" [pagination]="false"[autoplay]="true" [loop]="true" class="mySwiper">
+              <ng-template
+               *ngFor="let d of data" swiperSlide>
+               <div class="ImgREs">
+                <p>{{d?.title}}</p>
+               
+               </div>
+              </ng-template>
+            </swiper>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+   
+    <div class="header-midle-area" [class]="headerFixed ? 'header-fixed' : 'sticiky'">
+      <div class="container">
+        <div class="header-midle">
+          <div class="logo-area">
+            <a><img
+                src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/apex-logo.png"
+                alt="" /></a>
+          </div>
+          <!-- <div class="sub-menu-bar">
+           
+            
+       
+  
+            <span><i class="fa fa-bars"></i></span>
+          </div> -->
+          
+  
+  
+  
+          
+          <div class="header-midle-menu">
+            <ul>
+              <li class="header_input_search">
+                <mat-form-field  appearance="outline">
+                  <mat-label>Search</mat-label>
+                  <input autocomplete="off" matInput placeholder="">
+                  <mat-icon matSuffix>search</mat-icon>
+                  
+                </mat-form-field>
+                
+              </li>
+              <li>
+                <img src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/gift.png">
+                <p>Apex Rewards</p>
+              </li>
+              <li>
+                <img src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/pin.png">
+                <p>Store Locations</p>
+      
+              </li>
+              <li>
+                <mat-icon>person_outline</mat-icon>
+                <p>Store Locations</p>
+              </li>
+              <li>
+                <mat-icon>add_shopping_cart</mat-icon>
+                <p>Bag</p>
+              </li>
+              <li class="bar">
+                <button>
+                  <!-- <i class="fa fa-bars"></i> -->
+                </button>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="category-menu">
+            <ul>
+              <li>
+                <a></a>
+                <span><i class="fa fa-angle-right"></i></span>
+  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="header-bottom-area">
+    
+      <div class="container">
+      
+        <div class="header-bottom-main">
+      
+          <div class="header-menu-area">
+            <ul>
+              <li><a>EID ARRIVALS</a></li>
+              <li><a>MAN </a></li>
+              <li><a>WOMEN</a></li>
+              <li><a>KIDS</a></li>
+              <li><a> ONLINE EXCLUSIVE </a></li>
+              <li><a >Gift Voucher</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+
+<div class="mobile_nav">
+  <div class="HeaderSwiper">
+    <div class="carosel">
+      <swiper [navigation]="false" [pagination]="false"[autoplay]="true" [loop]="true" class="mySwiper">
+        <ng-template
+         *ngFor="let d of header" swiperSlide>
+         <div class="ImgREs">
+          <p>{{d?.title}}</p>
+         
+         </div>
+        </ng-template>
+      </swiper>
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="phonenavbar">
+    
+    <div class="one">
+      
+      <li class="bar">
+        <button (click)="slideMenuActive()">
+          <i class="fa fa-bars"></i>
+        </button>
+      </li>
+      <li class="aplexlogoo">
+      <img src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/apex-logo.png">
+    </li>
+    
+  </div>
+
+  <div class="two">
+    <li class="size">
+      <mat-icon>search</mat-icon>
+     
+    </li>
+    
+    <li class="size">
+      <img src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/gift.png">
+      
+    </li>
+    
+    <li class="size">
+      <mat-icon>person_outline</mat-icon>
+      
+    </li>
+    <li class="size">
+      <mat-icon>add_shopping_cart</mat-icon>
+      
+    </li>
+  </div>
+</div>
+
+<div
+  class="overlay"
+  *ngIf="slideMenu == true"
+  (click)="slideMenuInactive()"
+></div>
+<div class="slide-menu" [class]="slideMenu ? 'active-slide-menu' : 's'">
+  <!--slide-menu-top-->
+  <div class="slide-menu-top">
+    <div class="img">
+      <img src="https://martjackstorage.blob.core.windows.net/in-resources/25c7d1c6-73be-4ff9-b000-0bf110b5c461/Images/userimages/apex-logo.png">
+    </div>
+    <!---cross-->
+    <div class="cross">
+      <button (click)="slideMenuInactive()">X</button>
+    </div>
+  </div>
+  <!--slide-menu-toggle-->
+  <div class="slide-toggle-btn">
+  </div>
+  <!---responsive-home-menu-area-->
+  <div class="responsive-home-menu-area" *ngIf="resHomeMenu">
+    <ul>
+      <li class="bg"><a style="font-size:14px ; color: white;" (click)="slideMenuInactive()" routerLink="/">EID ARRIVALS</a></li>
+      
+      <li><a [class]="resHomeMenu ? 'active-toggle' : 'res-inactive'"
+        (click)="resHomeMenuActive()"> MAN</a></li>
+
+
+      <li><a  [class]="resCateMenu ? 'active-toggle' : 'res-inactive'"
+          (click)="resCategoryMenuActive()">WOMEN</a></li>
+
+      <li><a  [class]="resCateMenu ? 'active-toggle' : 'res-inactive'"
+            (click)="resCategoryMenuActive()">KIDS</a></li>
+            <li><a  [class]="resCateMenu ? 'active-toggle' : 'res-inactive'"
+              (click)="resCategoryMenuActive()">ONLINE EXCLUSIVE</a></li>
+
+   
+     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+    </ul>
+  </div>
+  <!---resposnive-categorie-menu-->
+  <div class="responsive-categorie" *ngIf="resCateMenu">
+    <ul>
+      <li>
+        <a href="#"
+          >Women's Fashion <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Men's Fashion <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Phones <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Computer <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Consumer Elecetronics <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Jewelry & Watches <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Home Appliances <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Bags & Shoes <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Toys,Kids & Babies <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Outdoor Fun & Sports <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Beauty,Health & Hair <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Automobiles <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Bags & Shoes<span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Jewelry & Watches <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+      <li>
+        <a href="#"
+          >Phones <span><i class="fa fa-angle-down"></i></span
+        ></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="overlay1" *ngIf="categoryMenu == true" (click)="categoryMenuHide()"></div>
+</div>
+
+
+
+
+ 
